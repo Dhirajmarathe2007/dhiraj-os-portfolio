@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dhiraj Marathe – Frontend Developer, ML Enthusiast, Android & Unity Developer from Jalgaon. Portfolio showcasing projects, skills, and certifications." />
+  <meta name="keywords" content="Dhiraj Marathe, Frontend Developer, Portfolio, Machine Learning, Android, Unity, Computer Science, Jalgaon" />
+  <meta name="author" content="Dhiraj Marathe" />
+  <meta property="og:title" content="DHIRAJ OS | Frontend Developer & ML Enthusiast" />
+  <meta property="og:description" content="Computer Science diploma student building modern web experiences, ML solutions, Android apps, and interactive digital products." />
+  <meta property="og:image" content="assets/images/profile.png" />
+  <title>DHIRAJ OS | Frontend Developer & ML Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="particle-canvas"></canvas>
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">DHIRAJ<span class="logo-accent">_OS</span></span>
+        <span class="logo-bracket">]</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"          class="nav-link">About</a></li>
+        <li><a href="#journey"        class="nav-link">Journey</a></li>
+        <li><a href="#skills"         class="nav-link">Skills</a></li>
+        <li><a href="#projects"       class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#achievements"   class="nav-link">Awards</a></li>
+        <li><a href="#experience"     class="nav-link">Experience</a></li>
+        <li><a href="#contact"        class="nav-link">Contact</a></li>
+        <li><a href="Assests/resume/Dhiraj_Marathe_Resume_2026.pdf" class="nav-cta" target="_blank" rel="noopener">Resume ↗</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">
+        <span class="tag-dot"></span>
+        <span>Available for Frontend Internships</span>
+      </div>
+      <h1 class="hero-name reveal-up">
+        <span class="name-line">Dhiraj</span>
+        <span class="name-line accent-glow">Marathe</span>
+      </h1>
+      <div class="hero-role reveal-up">
+        <span class="role-prefix">// </span>
+        <span class="typing-text" id="typing-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-bio reveal-up">
+        Computer Science diploma student building modern <em>web experiences</em>,
+        machine learning solutions, <em>Android applications</em>, and interactive digital products.
+      </p>
+      <div class="hero-buttons reveal-up">
+        <a href="#projects" class="btn btn-primary">
+          <span>Explore Portfolio</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="hero-stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat"><span class="stat-num">8+</span><span class="stat-label">Certs</span></div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat"><span class="stat-num">6+</span><span class="stat-label">Languages</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="orbit-ring orbit-1"></div>
+      <div class="orbit-ring orbit-2"></div>
+      <div class="orbit-ring orbit-3"></div>
+      <div class="profile-frame">
+       <img src="Assests/images/profile.png" alt="Dhiraj Marathe" class="profile-photo" loading="eager" decoding="async" />
+      </div>
+      <div class="floating-tag tag-html">HTML</div>
+      <div class="floating-tag tag-css">CSS</div>
+      <div class="floating-tag tag-js">JS</div>
+      <div class="floating-tag tag-ml">ML</div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ══════════════════════ -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col reveal-left">
+          <div class="about-img-wrapper">
+            <div class="about-photo-frame">
+             <img src="Assests/images/profile.png" alt="Dhiraj Marathe" class="about-photo" loading="lazy" decoding="async" />
+            </div>
+            <div class="about-img-badge">CS Student</div>
+          </div>
+
+          <!-- QUICK FACTS CARD -->
+          <div class="quick-facts glass-card reveal-up" style="--delay:0.2s">
+            <h4 class="qf-title">Quick Facts</h4>
+            <ul class="qf-list">
+              <li><span class="qf-icon">📍</span><span>Jalgaon, Maharashtra</span></li>
+              <li><span class="qf-icon">🎓</span><span>Diploma in CSE (MSBTE)</span></li>
+              <li><span class="qf-icon">💼</span><span>IT Intern – R3 System, Nashik</span></li>
+              <li><span class="qf-icon">☁</span><span>AWS Certified</span></li>
+              <li><span class="qf-icon">🤖</span><span>Machine Learning Projects</span></li>
+              <li><span class="qf-icon">📱</span><span>Android Development</span></li>
+              <li><span class="qf-icon">🎮</span><span>Unity Game Development</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <p class="about-bio">
+            I'm a Computer Science diploma student with a passion for building things that live on screens — from fast, elegant websites to intelligent ML models, Android apps, and interactive Unity games.
+          </p>
+          <p class="about-bio">
+            My interests span <em>Frontend Development</em>, <em>Machine Learning</em>, <em>Android App Development</em>, <em>Game Development</em>, and <em>Cloud Technologies</em>. I love turning complex ideas into polished, practical solutions.
+          </p>
+          <p class="about-bio">
+            I've worked on real-world web projects, built ML models in Python, developed Android applications using Android Studio, and explored interactive experiences with Unity — always driven by curiosity and a desire to ship things that matter.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Name</span>
+              <span class="info-value">Dhiraj Marathe</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">Jalgaon, Maharashtra, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Education</span>
+              <span class="info-value">Diploma in CSE (MSBTE)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Status</span>
+              <span class="info-value available">Open to Opportunities</span>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="Assests/resume/Dhiraj_Marathe_Resume_2026.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download Resume</a>
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ JOURNEY ═════════════════════ -->
+  <section id="journey" class="section journey">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">My <span class="accent">Journey</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2023</span>
+            <h3>Started Diploma</h3>
+            <p>Began Computer Science Engineering diploma, diving into programming fundamentals, data structures, and engineering principles.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2024</span>
+            <h3>Mastered C Programming</h3>
+            <p>Built strong foundations in procedural programming, memory management, and algorithmic thinking with C.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2024</span>
+            <h3>Advanced to C++</h3>
+            <p>Expanded into OOP with C++, earned IIT Bombay C++ certification. Covered STL, classes, and design patterns.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2024</span>
+            <h3>Android App Development</h3>
+            <p>Learned Android development using Android Studio and Java — building mobile apps from UI design to back-end logic.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2025</span>
+            <h3>IT Internship</h3>
+            <p>Completed internship at R3 System, Nashik — gaining hands-on industry experience in IT operations and document management.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2025</span>
+            <h3>Machine Learning Projects</h3>
+            <p>Built ML projects including Stock Price Prediction and Movie Recommendation systems using Python and scikit-learn.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2025</span>
+            <h3>Unity Game Development</h3>
+            <p>Started game development with Unity and C#, exploring 2D/3D mechanics, physics, and interactive storytelling.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2025</span>
+            <h3>Frontend Development</h3>
+            <p>Deepened frontend skills with HTML, CSS, and JavaScript — creating polished, responsive, animated web interfaces.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-card glass-card featured-timeline">
+            <span class="timeline-year current">2026</span>
+            <h3>Portfolio Launch 🚀</h3>
+            <p>Launched DHIRAJ OS — a premium portfolio showcasing all skills, projects, and certifications. Now seeking internship opportunities.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SKILLS ═════════════════════ -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">Skills &amp; <span class="accent">Tech</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal-up" style="--delay:0.05s">
+          <div class="skill-cat-header"><span class="skill-cat-icon">⟨/⟩</span><h3>Frontend</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">HTML5</span>
+            <span class="skill-tag primary">CSS3</span>
+            <span class="skill-tag primary">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.1s">
+          <div class="skill-cat-header"><span class="skill-cat-icon">{ }</span><h3>Programming</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag secondary">C</span>
+            <span class="skill-tag secondary">C++</span>
+            <span class="skill-tag secondary">Java</span>
+            <span class="skill-tag secondary">Python</span>
+            <span class="skill-tag secondary">C#</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.15s">
+          <div class="skill-cat-header"><span class="skill-cat-icon">⊞</span><h3>Database</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag accent">SQL</span>
+            <span class="skill-tag accent">Relational DBs</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.2s">
+          <div class="skill-cat-header"><span class="skill-cat-icon">☁</span><h3>Cloud</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag cloud">AWS</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.25s">
+          <div class="skill-cat-header"><span class="skill-cat-icon">◈</span><h3>AI / ML</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag ai">Machine Learning</span>
+            <span class="skill-tag ai">Generative AI</span>
+            <span class="skill-tag ai">Python ML</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.3s">
+          <div class="skill-cat-header"><span class="skill-cat-icon">📱</span><h3>Mobile</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag mobile">Android Studio</span>
+            <span class="skill-tag mobile">Java</span>
+            <span class="skill-tag mobile">Android Dev</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.35s">
+          <div class="skill-cat-header"><span class="skill-cat-icon">🎮</span><h3>Game Dev</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag game">Unity</span>
+            <span class="skill-tag game">C#</span>
+            <span class="skill-tag game">Game Dev</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ PROJECTS ════════════════════ -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- PROJECT FILTER TABS -->
+      <div class="project-filters reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="android">Android</button>
+        <button class="filter-btn" data-filter="game">Game Dev</button>
+      </div>
+
+      <!-- FEATURED PROJECT -->
+      <div class="project-featured reveal-up" data-category="web">
+        <div class="project-featured-content">
+          <div class="project-badges-row">
+            <span class="project-badge">⭐ Featured Project</span>
+            <span class="project-status live">🟢 In Development</span>
+          </div>
+          <h3 class="project-featured-title">Nashik MahaKumbh Mela<br>Website Management 2027</h3>
+          <p class="project-featured-desc">
+            A full-stack website management platform for the Nashik MahaKumbh Mela 2027. Provides real-time event info, crowd density updates, navigation assistance, announcements, and comprehensive visitor services — designed to handle millions of pilgrims.
+          </p>
+          <div class="project-future-scope glass-card">
+            <span class="future-label">🔭 Future Scope</span>
+            <p>Real-time crowd analytics dashboard, multilingual support, PWA offline mode, and AI-powered pilgrimage assistant integration.</p>
+          </div>
+          <div class="project-tech-row">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Dhirajmarathe2007/nashik-mahakumbh-2027" class="btn btn-primary btn-sm" target="_blank" rel="noopener">View Project ↗</a>
+            <a href="https://github.com/Dhirajmarathe2007" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="project-featured-visual">
+          <div class="project-img-placeholder featured">
+            <div class="placeholder-inner">
+              <svg viewBox="0 0 64 64" fill="none">
+                <rect x="8" y="8" width="48" height="36" rx="4" stroke="#00E5FF" stroke-width="1.5"/>
+                <line x1="8" y1="18" x2="56" y2="18" stroke="#00E5FF" stroke-width="1.5"/>
+                <circle cx="14" cy="13" r="2" fill="#8B5CF6"/>
+                <circle cx="21" cy="13" r="2" fill="#22D3EE"/>
+                <circle cx="28" cy="13" r="2" fill="#00E5FF"/>
+                <rect x="14" y="24" width="14" height="12" rx="2" fill="#8B5CF6" fill-opacity="0.3" stroke="#8B5CF6" stroke-width="1"/>
+                <rect x="34" y="24" width="14" height="5" rx="1" fill="#00E5FF" fill-opacity="0.2" stroke="#00E5FF" stroke-width="1"/>
+                <rect x="34" y="31" width="14" height="5" rx="1" fill="#00E5FF" fill-opacity="0.2" stroke="#00E5FF" stroke-width="1"/>
+                <line x1="24" y1="44" x2="40" y2="44" stroke="#00E5FF" stroke-width="1.5"/>
+                <rect x="28" y="44" width="8" height="6" rx="1" fill="#00E5FF" fill-opacity="0.3" stroke="#00E5FF" stroke-width="1"/>
+              </svg>
+              <span>Screenshot Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT CARDS -->
+      <div class="projects-grid">
+
+        <div class="project-card glass-card reveal-up" style="--delay:0.05s" data-category="ml">
+          <div class="project-card-top">
+            <span class="project-card-icon">🤖</span>
+            <span class="project-cat-tag ml-tag">ML</span>
+          </div>
+          <h3>Smart Crowd Management System</h3>
+          <p>AI-powered crowd density detection and flow management using computer vision and Python ML.</p>
+          <div class="project-tech-row">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Machine Learning</span>
+          </div>
+          <a href="https://github.com/Dhirajmarathe2007/smart-crowd-management" class="project-card-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="project-card glass-card reveal-up" style="--delay:0.1s" data-category="ml">
+          <div class="project-card-top">
+            <span class="project-card-icon">📈</span>
+            <span class="project-cat-tag ml-tag">ML</span>
+          </div>
+          <h3>Stock Price Trend Prediction</h3>
+          <p>ML model predicting stock price trends from historical data using regression algorithms.</p>
+          <div class="project-tech-row">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Machine Learning</span>
+          </div>
+          <a href="https://github.com/Dhirajmarathe2007/stock-price-prediction" class="project-card-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="project-card glass-card reveal-up" style="--delay:0.15s" data-category="ml">
+          <div class="project-card-top">
+            <span class="project-card-icon">🎬</span>
+            <span class="project-cat-tag ml-tag">ML</span>
+          </div>
+          <h3>Movie Recommendation System</h3>
+          <p>Collaborative filtering engine that suggests movies based on user preferences and viewing patterns.</p>
+          <div class="project-tech-row">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Collaborative Filtering</span>
+          </div>
+          <a href="https://github.com/Dhirajmarathe2007/movie-recommendation-system" class="project-card-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="project-card glass-card reveal-up" style="--delay:0.2s" data-category="web">
+          <div class="project-card-top">
+            <span class="project-card-icon">⚡</span>
+            <span class="project-cat-tag web-tag">Web</span>
+          </div>
+          <h3>DHIRAJ OS Portfolio</h3>
+          <p>This portfolio — built with vanilla HTML, CSS, and JS. Features particle effects, glassmorphism, and scroll animations.</p>
+          <div class="project-tech-row">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+          <a href="https://github.com/Dhirajmarathe2007/dhiraj-os-portfolio" class="project-card-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CERTIFICATIONS ══════════════════ -->
+  <section id="certifications" class="section certifications">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 05</span>
+        <h2 class="section-title">Certifi<span class="accent">cations</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card reveal-up" style="--delay:0.05s">
+          <div class="cert-icon aws">☁</div>
+          <div class="cert-body">
+            <h3>AWS Certificate</h3>
+            <span class="cert-issuer">Amazon Web Services</span>
+          </div>
+          <div class="cert-actions">
+            <a href="assets/certs/aws.pdf" class="cert-view" target="_blank">View ↗</a>
+            <a href="assets/certs/aws.pdf" class="cert-dl" download>⬇</a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal-up" style="--delay:0.1s">
+          <div class="cert-icon tata">🛡</div>
+          <div class="cert-body">
+            <h3>Tata Cybersecurity Certificate</h3>
+            <span class="cert-issuer">Tata Group</span>
+          </div>
+          <div class="cert-actions">
+            <a href="assets/certs/tata-cyber.pdf" class="cert-view" target="_blank">View ↗</a>
+            <a href="assets/certs/tata-cyber.pdf" class="cert-dl" download>⬇</a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal-up" style="--delay:0.15s">
+          <div class="cert-icon genai">✦</div>
+          <div class="cert-body">
+            <h3>Tata Gen AI Data Analyst</h3>
+            <span class="cert-issuer">Tata Group</span>
+          </div>
+          <div class="cert-actions">
+            <a href="assets/certs/tata-genai.pdf" class="cert-view" target="_blank">View ↗</a>
+            <a href="assets/certs/tata-genai.pdf" class="cert-dl" download>⬇</a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal-up" style="--delay:0.2s">
+          <div class="cert-icon google">◉</div>
+          <div class="cert-body">
+            <h3>Google Analytics Certificate</h3>
+            <span class="cert-issuer">Google</span>
+          </div>
+          <div class="cert-actions">
+            <a href="assets/certs/google-analytics.pdf" class="cert-view" target="_blank">View ↗</a>
+            <a href="assets/certs/google-analytics.pdf" class="cert-dl" download>⬇</a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal-up" style="--delay:0.25s">
+          <div class="cert-icon ibm">⬡</div>
+          <div class="cert-body">
+            <h3>IBM Skills Network DB0101EN</h3>
+            <span class="cert-issuer">IBM</span>
+          </div>
+          <div class="cert-actions">
+            <a href="assets/certs/ibm-db.pdf" class="cert-view" target="_blank">View ↗</a>
+            <a href="assets/certs/ibm-db.pdf" class="cert-dl" download>⬇</a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal-up" style="--delay:0.3s">
+          <div class="cert-icon ml">◈</div>
+          <div class="cert-body">
+            <h3>Machine Learning Using Python</h3>
+            <span class="cert-issuer">Certification Body</span>
+          </div>
+          <div class="cert-actions">
+            <a href="assets/certs/ml-python.pdf" class="cert-view" target="_blank">View ↗</a>
+            <a href="assets/certs/ml-python.pdf" class="cert-dl" download>⬇</a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal-up" style="--delay:0.35s">
+          <div class="cert-icon ibm">⬡</div>
+          <div class="cert-body">
+            <h3>SQL &amp; Relational Databases 101</h3>
+            <span class="cert-issuer">IBM</span>
+          </div>
+          <div class="cert-actions">
+            <a href="assets/certs/ibm-sql.pdf" class="cert-view" target="_blank">View ↗</a>
+            <a href="assets/certs/ibm-sql.pdf" class="cert-dl" download>⬇</a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal-up" style="--delay:0.4s">
+          <div class="cert-icon iit">◆</div>
+          <div class="cert-body">
+            <h3>C++ Programming</h3>
+            <span class="cert-issuer">IIT Bombay</span>
+          </div>
+          <div class="cert-actions">
+            <a href="assets/certs/iit-cpp.pdf" class="cert-view" target="_blank">View ↗</a>
+            <a href="assets/certs/iit-cpp.pdf" class="cert-dl" download>⬇</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ ACHIEVEMENTS ════════════════════ -->
+  <section id="achievements" class="section achievements">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 06</span>
+        <h2 class="section-title">Achieve<span class="accent">ments</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card glass-card reveal-up" style="--delay:0.05s">
+          <div class="ach-icon">☁</div>
+          <div class="ach-body">
+            <h3>AWS Certified</h3>
+            <p>Earned AWS certification demonstrating expertise in cloud computing fundamentals.</p>
+          </div>
+          <div class="ach-glow"></div>
+        </div>
+
+        <div class="achievement-card glass-card reveal-up" style="--delay:0.1s">
+          <div class="ach-icon">◆</div>
+          <div class="ach-body">
+            <h3>IIT Bombay C++ Certified</h3>
+            <p>Completed C++ programming certification from India's premier tech institution.</p>
+          </div>
+          <div class="ach-glow"></div>
+        </div>
+
+        <div class="achievement-card glass-card reveal-up" style="--delay:0.15s">
+          <div class="ach-icon">💼</div>
+          <div class="ach-body">
+            <h3>IT Internship Completed</h3>
+            <p>Successfully completed IT internship at R3 System, Nashik with hands-on industry exposure.</p>
+          </div>
+          <div class="ach-glow"></div>
+        </div>
+
+        <div class="achievement-card glass-card reveal-up" style="--delay:0.2s">
+          <div class="ach-icon">🚀</div>
+          <div class="ach-body">
+            <h3>Multiple Technical Projects</h3>
+            <p>Built 5+ projects across web, ML, Android, and game development domains.</p>
+          </div>
+          <div class="ach-glow"></div>
+        </div>
+
+        <div class="achievement-card glass-card reveal-up" style="--delay:0.25s">
+          <div class="ach-icon">🏅</div>
+          <div class="ach-body">
+            <h3>8+ Professional Certifications</h3>
+            <p>Earned certifications from AWS, IBM, Google, IIT Bombay, and Tata Group.</p>
+          </div>
+          <div class="ach-glow"></div>
+        </div>
+
+        <div class="achievement-card glass-card reveal-up" style="--delay:0.3s">
+          <div class="ach-icon">⚡</div>
+          <div class="ach-body">
+            <h3>Portfolio Website Launched</h3>
+            <p>Designed and deployed a full futuristic portfolio website from scratch using vanilla web technologies.</p>
+          </div>
+          <div class="ach-glow"></div>
+        </div>
+
+        <div class="achievement-card glass-card reveal-up" style="--delay:0.35s">
+          <div class="ach-icon">🤖</div>
+          <div class="ach-body">
+            <h3>ML Projects Built</h3>
+            <p>Developed stock prediction, crowd management, and movie recommendation ML systems.</p>
+          </div>
+          <div class="ach-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ EXPERIENCE ══════════════════════ -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 07</span>
+        <h2 class="section-title">Experi<span class="accent">ence</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="exp-grid">
+
+        <div class="exp-card glass-card reveal-up">
+          <div class="exp-header">
+            <div>
+              <span class="exp-role">IT Intern</span>
+              <span class="exp-company">R3 System, Nashik</span>
+            </div>
+            <span class="exp-badge">2025</span>
+          </div>
+          <p class="exp-desc">Gained hands-on industry experience in IT operations, infrastructure support, and technical workflows at a professional IT firm in Nashik.</p>
+          <div class="exp-tags">
+            <span class="skill-tag secondary">IT Operations</span>
+            <span class="skill-tag secondary">Technical Support</span>
+          </div>
+        </div>
+
+        <div class="exp-card glass-card reveal-up" style="--delay:0.15s">
+          <div class="exp-header">
+            <div>
+              <span class="exp-role">Document Management Executive</span>
+              <span class="exp-company">The Jalgaon District Central Co-Operative Bank
+</span>
+            </div>
+            <span class="exp-badge">2025</span>
+          </div>
+          <p class="exp-desc">Managed critical document workflows including processing, verification, and data management to ensure accurate record-keeping and compliance.</p>
+          <div class="exp-tags">
+            <span class="skill-tag primary">Document Processing</span>
+            <span class="skill-tag primary">Data Verification</span>
+            <span class="skill-tag primary">Data Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ STATS ════════════════════════ -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal-up" style="--delay:0.1s">
+          <span class="stat-counter" data-target="5">0</span><span class="stat-plus">+</span>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-item reveal-up" style="--delay:0.2s">
+          <span class="stat-counter" data-target="8">0</span><span class="stat-plus">+</span>
+          <p>Certificates Earned</p>
+        </div>
+        <div class="stat-item reveal-up" style="--delay:0.3s">
+          <span class="stat-counter" data-target="6">0</span><span class="stat-plus">+</span>
+          <p>Programming Languages</p>
+        </div>
+        <div class="stat-item reveal-up" style="--delay:0.4s">
+          <span class="stat-counter" data-target="1">0</span><span class="stat-plus">+</span>
+          <p>Internships</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ CONTACT ══════════════════════ -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 08</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-tagline">
+            I'm actively looking for frontend internship opportunities. Whether you have a project, a question, or just want to say hi — my inbox is open!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:dhirajmarathe2007@gmail.com" class="contact-link">
+              <span class="contact-link-icon">✉</span>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">dhirajmarathe2007@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/Dhirajmarathe2007" class="contact-link" target="_blank" rel="noopener">
+              <span class="contact-link-icon">⌥</span>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">Dhirajmarathe2007</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/dhiraj-marathe-802255331" class="contact-link" target="_blank" rel="noopener">
+              <span class="contact-link-icon">in</span>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">dhiraj-marathe-802255331</span>
+              </div>
+            </a>
+            <div class="contact-link no-hover">
+              <span class="contact-link-icon">◎</span>
+              <div>
+                <span class="contact-link-label">Location</span>
+                <span class="contact-link-value">Jalgaon, Maharashtra, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-col reveal-right">
+          <form class="contact-form glass-card" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-note" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">[</span>
+          <span class="logo-text">DHIRAJ<span class="logo-accent">_OS</span></span>
+          <span class="logo-bracket">]</span>
+        </div>
+        <p class="footer-copy">Crafted with ♥ by Dhiraj Marathe · Jalgaon, India · 2026</p>
+        <div class="footer-links">
+          <a href="https://github.com/Dhirajmarathe2007" target="_blank" rel="noopener" title="GitHub Profile">GitHub</a>
+          <a href="https://www.linkedin.com/in/dhiraj-marathe-802255331" target="_blank" rel="noopener" title="LinkedIn Profile">LinkedIn</a>
+          <a href="mailto:dhirajmarathe2007@gmail.com" title="Send Email">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
